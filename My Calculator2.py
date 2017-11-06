@@ -32,7 +32,7 @@ class Example(QtWidgets.QWidget):
 
     def buttonClicked(self):
         sender = self.sender();
-        #self.display.setText(sender.text())
+
         key = sender.text()
         if key == "=":
             result=str(eval(self.display.text()))
