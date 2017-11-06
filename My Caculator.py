@@ -5,7 +5,6 @@ class Calculator(QWidget):
     def __init__(self,parent=None):
         super().__init__(parent)
         self.initUI()
-#----------------------------------------------------------
     def initUI(self):
         grid = QGridLayout()
         self.setLayout(grid)
@@ -28,7 +27,6 @@ class Calculator(QWidget):
 
     def buttonClicked(self):
         sender = self.sender();
-        # self.display.setText(sender.text())
         key = sender.text()
         if key == "=":
             result = str(eval(self.display.text()))
